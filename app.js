@@ -15,6 +15,7 @@ var swaggerJSDoc  = require('swagger-jsdoc');
 
 var api_docs      = require('./routes/api-docs');
 var users         = require('./routes/users');
+var media         = require('./routes/media');
 
 var conf          = require('./config');
 var authenticate  = require('./authenticate'); //needed for authentication do not uncomment
@@ -74,6 +75,7 @@ app.use(function(req, res, next) {
 
 app.use('/api-docs', api_docs);
 app.use('/users', users);
+app.use('/media', media);
 
 // serve swagger
 app.get('/swagger.json', function(req, res) {
