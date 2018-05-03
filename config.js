@@ -34,7 +34,7 @@ exports.swagger = {
       version: '1.0.0',
       description: 'This is a seed project for an API that has user authentication and authorization processes included. Enjoy!'
     },
-    host: 'localhost:3000',
+    host: 'localhost:8080',
     securityDefinitions: {
       /*Bearer: {
         type: 'apiKey',
